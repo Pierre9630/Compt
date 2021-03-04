@@ -1,0 +1,176 @@
+header{
+    color: aliceblue;
+    border-style:inset;
+    border-radius: 10px;
+    background-image: url("background.png") fixed no-repeat;
+}
+body{
+    
+    background-image: url(mainbackground.png);
+    background-color:transparent;
+}
+
+@font-face {
+    font-family: "BlackManSans";
+    src: url(Aclonica-Regular.ttf);
+  }
+
+.container{
+    font-family: "BlackManSans";
+    border-style: outset;
+    display:grid;
+    font-style: inherit;
+    /*grid-template-rows: "1fr 2fr 1fr"*/
+    grid-template-columns:"1fr 1fr 1fr 1fr";
+    grid-column-gap: 5px;
+    grid-auto-flow:column;
+    
+}
+.Experiences{
+    color:aliceblue;
+}
+.Formations{
+    background-color: rgb(40, 40, 54);
+    color:aliceblue;
+}
+.Langages{
+    padding: 10px;
+    color:aliceblue;
+    font-weight: bold;
+    background-color: rgb(61, 61, 180);
+    
+    display: flex;
+    flex-direction: column;
+}
+.Moi{
+    color:aliceblue;
+}
+.Cs{
+    display:inline-block;
+}
+.p1{
+    display:inline-block
+}
+.p2{
+    margin-left: 20px;
+    display: inline-block;
+}
+img{
+    color:aliceblue;
+    box-shadow: 2px 2px 5px 5px black;
+}
+.Csharp{
+    grid-area:Csharp;
+}
+.Cpp{
+    grid-area:Cpp;
+}
+.HtmlCss{
+    grid-area:HtmlCss;
+}
+.Graphique{
+    color:aliceblue;
+
+}
+
+#piechart{
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: green;
+    box-shadow: 5px 5px 5px black;
+    
+}
+#piechart::before {
+    content: ’’;
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    animation: spin 3s linear infinite,
+    bg 6s step-end infinite;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
+   }
+
+
+.circle-chart__circle {
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+  }
+.containerd div{
+
+    color:aliceblue;
+    display: flex;
+    grid-template-columns:"1fr 1fr 1fr"
+    grid-column-gap: 5px;
+    grid-auto-flow:column;
+    
+}
+
+.containerd div .circle-chart{
+    margin-left:10px;
+    color:aliceblue;
+    
+}
+
+.containerd div  g  text{
+    
+    color:aliceblue !important;
+    
+    
+    
+}
+
+.containerd h2{
+    margin-left: 10px;
+}
+/*.containerd h2:nth-of-type(odd){
+    margin-left: 10px;
+}
+.containerd h2:nth-of-type(even){
+    margin-left: 10px;
+}*/
+button[class^="page"]{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
+tCsharp pCsharp pCsharp"
+    "tCpp    pCpp       pCpp"
+    "thtmlcss phtmlcss phtmlcss
+    @media screen 
+    and (max-width: 1024px){ 
+      .container{
+        width:98%;
+        display: block;
+      }
+  
+      .container .Experiences {
+  
+          width:100%;
+          height: auto;
+          margin:0%;
+          
+      }
+          .container .Formations {
+              margin:0%;
+              width:100%;
+              height:auto;
+  
+          }
+  
+      .container .Langages {
+          float:none;
+          width:100%;
+          height:auto;
+          clear:both;
+          margin:0%;
+          
+      }
+    }
